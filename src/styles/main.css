@@ -1,0 +1,403 @@
+*{
+	--bgGray:#161721;
+	--family:'specialFamily';
+	}
+	
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+	
+	@font-face{
+	  font-family:specialFamily;
+	  src:url(../assets/fonts/font.ttf);
+	}
+	body{
+	  padding:0;
+	  margin:0;
+	  top:0;
+	  left:0;
+	  font-family:var(--family);
+	  background:var(--bgGray);
+	  color: #dee0e9;
+	  height:100vh;
+	  display:grid;
+	  grid-gap:15px; 
+	  grid-template:max-content auto 60px / auto;
+	} 
+
+	body #app {
+		padding:0;
+		margin:0;
+		top:0;
+		left:0;
+		font-family:var(--family);
+		background:var(--bgGray);
+		color: #dee0e9;
+		height:100vh;
+		display:grid;
+		grid-gap:15px; 
+		grid-template:max-content auto 60px / auto;
+	}
+	
+	body #app  .navbar {
+	display: grid;
+	}     
+	
+	body #app  .navbar .logo{
+	  display: none;
+	}
+	
+	
+	body #app  .navbar .end{
+	display:none;
+	}
+	
+	body #app  .footer{
+	  display:grid; 
+	  place-items:center;
+	  align-items:center;
+	  color:#dee0e9;
+	}
+	
+	body #app  .navbar .content{
+	  display:flex;
+	}
+	
+	
+	body #app  .navbar .content .item{
+	 padding:20px 27px;
+	  display: flex;
+	  align-items:center;
+	  justify-items:center;
+	  justify-content:center;
+	
+	}
+	
+	body #app  .navbar .content .item > i {
+	  display:flex;
+	  margin-top:3px;
+	  font-weight:900;
+	  margin-right:10px;
+	}
+	
+	body #app  .navbar .content a{
+	  transition:color 0.2s;
+	  color:white;
+	  text-decoration:none;
+	}
+	
+	body #app  .navbar .content a:hover{
+	  transition:color 0.2s;
+	  color:#e4e0e0 !important;
+	}
+	
+	body #app  .container {
+	  display:grid;  
+	  place-items:center;
+	}
+	
+	body #app  .container .profile{
+	  display:grid; 
+	  grid-template:auto / 9fr 6fr;
+	}
+	
+	
+	body #app  .container .profile .badge .spotifyStatus{
+		display: grid;
+		background: #121315;
+		padding: 5px 27px;
+		padding-top:10px;
+		border-radius:0 0 15px 15px;
+		width: 284px;
+		height: 111px;
+		padding-bottom: 25px;
+		grid-template: 1fr max-content / auto;
+	}
+	body #app  .container .profile .badge .spotifyStatus .ly1{
+	display:grid; 
+	grid-template:auto / 8fr auto;
+	padding-bottom:15px;
+	padding-top:5px;
+	align-items:center;
+	}
+	body #app  .container .profile .badge .spotifyStatus .ly1 > .h{ 
+	  text-transform:uppercase;
+	  display:grid;
+	  justify-content:start;
+	font-weight:bold;
+	font-size:12px;
+	}
+	
+	body #app  .container .profile .badge .spotifyStatus .ly1 > .h2{
+	  display:grid;
+	 margin-top:5px;
+	  font-size:22px;
+	  color:rgb(53, 213, 53);
+	}
+	
+	body #app  .container .profile .badge .spotifyStatus .ly2{
+	  display:grid; 
+	  grid-template:max-content / auto 8fr;
+	}
+	
+	body #app  .container .profile .badge .spotifyStatus .ly2 > .image{
+	  height:65px;
+	  width:65px;
+	  border-radius:10px;
+	}
+
+	body #app  .container .profile .badge .spotifyStatus .ly2 > .details {
+	  display:grid;  
+	  justify-content:start;
+	  font-size:12px;
+	  width:max-content;
+	  grid-template: auto / auto;
+	  margin-left:10px;
+	  grid-gap:0;
+	  text-align:left;
+	  align-items:center;
+	}
+	body #app  .container .profile .badge .spotifyStatus .ly2 > .details > .title { 
+	  font-size:18px; 
+	  font-weight:bold;
+	  display:grid; 
+	  height:max-content;
+	  align-self:start;
+	}
+	
+	
+	body #app  .container .profile .bio {
+	  justify-content:center;
+	  margin-top:64px;
+	  grid-template:1fr 1fr 5fr / auto;
+	  display:grid;
+	}
+	
+	body #app  .container .profile .bio > .title {
+	  font-size:25px;
+	  font-weight:900;
+	  height:max-content;
+	  margin-bottom:25px;
+	}
+	
+	body #app  .container .profile .bio > .pr {
+	  max-width:590px;
+	  height:max-content;
+	  padding:0;
+	  margin:0;
+	  }
+	
+	body #app  .container .profile .icons{
+	  height:max-content;
+	  font-size:29px;
+	  margin-top:15px;
+	}
+	
+	
+	body #app  .container .profile .badge {
+	  display: grid;
+	   align-items:center;
+	   width:max-content;
+	  place-items:start;
+	/* background:#19191b; */
+	background:url(https://data.whicdn.com/images/306688083/original.gif) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	  padding-top:25px;
+	  border-radius:15px 15px 25px 25px;
+	  height:max-content;
+	}
+	
+	body #app  .container .profile .bio .icons{
+	  font-size:23px;
+	  height:max-content;
+	}
+	
+	body #app  .container .profile .icons > a {
+	  color:white;
+	  text-decoration:none;
+	  margin-right:5px;
+	}
+	
+	body #app  .container .profile .bio > .title > span{
+	  color:#69F;
+	}
+	
+	
+	body #app .container .profile .badge .nick {
+		margin-top:25px;
+		display:flex;
+		align-items:center;
+		padding-top:17px;
+		position:relative;
+		font-family:'Poppins';
+		padding-bottom:17px;
+		box-shadow:0 0.3px gray;
+		height:max-content;;
+		width:100%;
+		background:#121315; 
+	}
+	body #app  .container .profile .badge .nick .name {
+	  font-size:20px;
+	  position:relative;
+	  left:35px;
+	  font-weight:600;
+	}
+	body #app  .container .profile .badge .nick .hash{
+	top:3px;
+	position:relative;
+	width:max-content;
+	height:max-content;
+	left:38px;
+	font-weight:500;
+	  color:rgb(203, 195, 195);
+	  font-size:15px;
+	}
+	
+	body::-webkit-scrollbar {
+	  width: 9px;        
+	  height:0;    
+	}
+	
+	body::-webkit-scrollbar-track {
+	  background: var(--bgGray);      
+	}
+	body::-webkit-scrollbar-thumb {
+	  background-color: #404063;    
+	  border-radius: 20px;      
+	}
+	body #app  .container .projects{
+	  display:grid; 
+	  justify-content:center!important;
+	  position:relative;
+	  grid-template-rows:repeat(3, max-content);
+	 grid-template-columns: repeat(3, max-content);
+	  grid-gap:15px;
+	}
+	
+	body #app  .container .projects .project{
+	  background:#212432;
+	  border-radius:5px;
+	 width:400px;
+	  display:grid;
+	  grid-template: max-content max-content / auto;
+	  padding:15px;
+	}
+	
+	body #app  .container .projects .project .head {
+	  display:grid;
+	  grid-template: auto / 7fr auto;
+	}
+	
+	body #app  .container .projects .project .title{
+	  font-weight:600;
+	  font-size:20px;
+	  width:max-content;
+	}
+	
+	body #app  .container .projects .project > .description {
+	  margin-top:15px;
+	  width:100%;
+	  height:max-content;
+	}
+	
+	body #app  .container .projects .project .head .languages{
+	  align-items:center;
+	  justify-content:end;
+	  height:max-content;
+	  display:flex;
+	}
+	
+	body #app  .container .projects .project .languages .lang{
+	  height:20px; 
+	  margin-left:5px;
+	  width:20px;
+	}
+	
+	
+	@media(max-width:800px){
+	
+	  body #app  .navbar .content{
+		 display:none;
+	  }
+		body #app  .container .profile {
+		display:grid;
+		 align-items:center;
+	  place-items:center;
+		grid-template:auto / auto;
+	  }
+	body #app  .container .profile .bio {
+		justify-content: center;
+		margin:0!important;
+		grid-template: auto / auto;
+		display: grid;
+	}
+	  body #app  .navbar {
+		padding:8px 12px;
+		display: grid;
+		grid-template: auto / 13fr auto!important;
+	  }
+	
+	  body #app  .navbar .logo{
+	  display: none;
+	  font-size:18px;
+	  font-weight:900;
+	  justify-content:center;
+	}
+	body #app  .navbar .end{
+	  display: grid;
+	  height:max-content;
+	  justify-content:right;
+	  cursor:pointer;
+	  padding:10px;
+	}
+	
+	body #app  .navbar .end #bc15{
+	  padding:12px 12px;
+		display:grid;
+		font-weight:600!important;
+	place-items:center;
+	  border-radius:40px;
+	}
+	
+	body #app  .navbar .end #bc15:hover{
+	  background:#303342;
+	}
+	
+	body #app  .navbar {
+	  display: grid;
+	  grid-template: max-content / 1.5fr 13fr;
+	}
+	body #app  .container .projects{
+	  display:grid; 
+	  align-items:center;
+	  grid-template:auto / auto;
+	  grid-gap:5px;
+	}
+	
+	body #app  .container .projects .project{
+	  background:#212432;
+	  border-radius:5px;
+	 width:300px;
+	  display:grid;
+	  grid-template: auto / auto;
+	  padding:15px;
+	}
+	
+	body #app  .container .projects .project .head {
+	  display:grid;
+	  grid-template: auto / 7fr auto;
+	}
+	
+	
+	}
+	@media(min-width:800px){
+	  body #app  .navbar .content{
+	  display:flex!important;
+	}
+	
+	body #app  .navbar{
+	  box-shadow:none!important;
+	}
+	
+	}

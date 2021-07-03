@@ -1,0 +1,59 @@
+{
+    "name":"358",
+    "bio":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veritatis ab molestiae accusantium quis iure est officiis corporis earum molestias inventore consectetur nobis voluptatem hic, minima vel, quas recusandae ad.",
+    "links":{
+       "instagram":"https://instagram.com/dasist358",
+       "github":"https://github.com/maze357",
+       "twitter":"",
+       "discord":"https://discord.com/users/453336745967091722",
+       "src":"https://github.com/maze357/basic-portfolio"
+    },
+    "discord":{
+       "id":"453336745967091722"
+    },
+    "A_POINT":"https://api-bioprc.glitch.me/v1",
+    "projects":[
+       {
+          "name":"Vue Portfolio",
+          "description":"Şu an gördüğün proje.",
+          "flags":[
+             "html",
+             "css",
+             "js",
+             "vue"
+          ]
+       },
+       {
+          "name":"Basic Banbot", 
+          "description":"Hedef sunucudaki bütün kanalları silen ve sunucuya spam saldırısı yapan küçük çaplı bot.",
+          "flags":[
+             "js"
+          ]
+       },
+       {
+          "name":"Discord Gift Code Generator",
+          "description":"Hiçbir zaman tutmayan Discord Gift kodları üreten herhangi bir algoritmaya sahip olmayan ufak bir script",
+          "flags":[
+             "python"
+          ]
+       },
+       {
+          "name":"Chatify",
+          "description":"Çok odalı gerçek zamanlı (yarım kalmış) sohbet uygulaması (Express, MongoDB)",
+          "flags":[
+             "html",
+             "css",
+             "js"
+          ]
+       },
+       {
+          "name":"Basic TodoApp",
+          "description":"ReactJS ile yaptığım bi işe yaramayan başlangıç uygulamam (not tutuyodum fln)",
+          "flags":[
+             "html",
+             "css",
+             "react"
+          ]
+       }
+    ]
+ }
